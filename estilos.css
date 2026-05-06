@@ -106,10 +106,12 @@ h2 {
     gap: 30px; 
 }
 
-.fila-foto img {
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+.fila-foto {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .dato {
@@ -135,6 +137,7 @@ h2 {
     align-items: center; 
     justify-content: space-between; 
     gap: 20px;
+    flex-wrap: wrap; 
 }
 
 .lista-pasatiempos {
