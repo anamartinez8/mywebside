@@ -4,45 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <style>
-.navbar ul {
-    list-style-type: none;
-    background-color: #00A86B;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    color: #17acf0;
-}
-
-.texto {
-    font-size: 27px;
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.multimedia {
-    text-align: center; /* centra imagen y audio */
-}
-</style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body bgcolor="#bffcc6">
 
-  <nav class="navbar">
+<nav class="navbar">
     <a href="index.html" class="marca">CV</a>
-    <label class="menu-btn" for="menu-toggle"></label>
-    <ul class="menu-escritorio">
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="menu-escritorio" id="nav-list">
       <li><a href="presentacion.html">Presentación</a></li>
       <li><a href="datos.html">Datos Generales</a></li>
       <li><a href="educacion.html">Estudios</a></li>
@@ -50,14 +23,16 @@
       <li><a href="referencias.html">Referencias</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-  </nav>
+</nav>
   
         <br>
         <br>
     <div class="contenedor">
     <h2 class="titulo-pagina">Contacto</h2>
+    <div class="container">
+      <div class="card">
     <div class="formulario">
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form action="https://formspree.io/f/xpqbryby" method="POST">
         <input type="hidden" name="access_key" value="620c5c8e-7ea2-40ce-9ad2-b8014f3e4ab2">
         <ul>
           <li>

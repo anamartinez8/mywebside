@@ -4,44 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudios</title>
-    <style>
-.navbar ul {
-    list-style-type: none;
-    background-color: #00A86B;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    color: #17acf0;
-}
-
-.texto {
-    font-size: 27px;
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.multimedia {
-    text-align: center; /* centra imagen y audio */
-}
-</style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body bgcolor="#bffcc6">
-    <nav class="navbar">
+<body bgcolor="#bffcc6"">
+<nav class="navbar">
     <a href="index.html" class="marca">CV</a>
-    <label class="menu-btn" for="menu-toggle"></label>
-    <ul class="menu-escritorio">
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="menu-escritorio" id="nav-list">
       <li><a href="presentacion.html">Presentación</a></li>
       <li><a href="datos.html">Datos Generales</a></li>
       <li><a href="educacion.html">Estudios</a></li>
@@ -49,30 +22,26 @@
       <li><a href="referencias.html">Referencias</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-  </nav>
+</nav>
         <br>
         <br>
     <h2>Estudios</h2>
-   <div class="card">
-      <ul class="lista-items">
+   <div class="container">
+
+    <div class="card">
         <li>
-          <div>
             <strong>Primaria</strong><br>
             Centro Escolar Católico "La Escuela de Cristo"
-          </div>
         </li><br>
-        
+  
         <li>
-          <div>
             <strong>Básicos</strong><br>
             Liceo Pierre de Fermat
-          </div>
         </li><br>
+
         <li>
-          <div>
             <strong>Diversificado (2025 - Actual)</strong><br>
             Instituto Profesional de Computación
-          </div>
         </li><br>
       </ul>
 </body>

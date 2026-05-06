@@ -4,44 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentación</title>
-    <style>
-.navbar ul {
-    list-style-type: none;
-    background-color: #00A86B;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    color: #17acf0;
-}
-
-.texto {
-    font-size: 27px;
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.multimedia {
-    text-align: center; /* centra imagen y audio */
-}
-</style>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body bgcolor="#bffcc6">
-    <nav class="navbar">
+<nav class="navbar">
     <a href="index.html" class="marca">CV</a>
-    <label class="menu-btn" for="menu-toggle"></label>
-    <ul class="menu-escritorio">
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <ul class="menu-escritorio" id="nav-list">
       <li><a href="presentacion.html">Presentación</a></li>
       <li><a href="datos.html">Datos Generales</a></li>
       <li><a href="educacion.html">Estudios</a></li>
@@ -49,14 +22,18 @@
       <li><a href="referencias.html">Referencias</a></li>
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
-  </nav>
+</nav>
   <br>
   <br>
-    <h1>Presentación</h1>
+    <h2>Presentación</h2>
 
 <p>Soy una persona responsable, organizada y con muchas ganas de aprender y mejorar cada día. 
     Me adapto con facilidad al trabajo en equipo.Me gusta cumplir con mis responsabilidades de manera puntual y dar siempre lo mejor de mí en cada actividad que realizo.</p>
 <p>Me considero una persona perseverante, creativa y comprometida con mis metas, siempre buscando nuevas oportunidades para crecer y adquirir experiencia.
 Además, valoro el respeto, la buena comunicación y la disciplina, ya que considero que son fundamentales en cualquier ambiente de estudio o trabajo. Mi objetivo es seguir preparándome para alcanzar nuevas oportunidades y aportar de forma positiva en cada lugar donde participe.</p>
+
+<audio controls>
+    <source src="Audio/dlmd.mp3" type="audio/mp3">
+</audio>
 </body>
 </html>

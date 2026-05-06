@@ -1,0 +1,267 @@
+.menu-escritorio {
+    list-style-type: none;
+    background-color: #00A86B;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00A86B;
+    padding: 0 20px;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #17acf0;
+}
+
+.texto {
+    font-size: 27px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.multimedia {
+    text-align: center; 
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.multimedia {
+    text-align: center;
+    margin: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    background: #b9eac6;
+    border-radius: 15px;
+    padding: 25px;
+    width: 100%; 
+    max-width: 850px;
+    margin: 20px auto; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; 
+}
+
+.card h3 {
+    margin-top: 0;
+    color: black;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.volver {
+    display: block;
+    text-align: center;
+    margin: 40px;
+}
+
+.volver a {
+    background: #17acf0;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.volver a:hover {
+    background: white;
+}
+
+.fila-foto {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+}
+
+.fila-foto img {
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.dato {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.etiqueta {
+    font-weight: bold;
+    color: black; 
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.valor {
+    color: #333;
+    font-size: 18px;
+}
+
+.fila-pasatiempos {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+.lista-pasatiempos {
+    flex: 1; 
+}
+
+.lista-pasatiempos ul {
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.video-container {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.video-container video {
+    border-radius: 10px;
+    max-width: 100%; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.formulario ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.formulario li {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+.formulario label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+}
+
+.formulario input:focus, 
+.formulario textarea:focus {
+    outline: none;
+    border-color: #00A86B; 
+    box-shadow: 0 0 5px rgba(0, 168, 107, 0.3);
+}
+
+.boton {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton input[type="submit"] {
+    background-color: #00A86B;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.boton input[type="submit"]:hover {
+    background-color: #008f5d;
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;   
+    height: 21px;  
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 1001;
+}
+
+.bar {
+    display: block !important;
+    width: 100% !important;
+    height: 4px !important; 
+    background-color: #ffffff !important; 
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex !important; 
+    }
+
+    .navbar {
+        position: relative; 
+        height: 60px;      
+    }
+
+    .menu-escritorio {
+        display: none !important;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #00A86B;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .menu-escritorio.active {
+        display: flex !important;
+    }
+}
