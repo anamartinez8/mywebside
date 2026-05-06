@@ -1,3 +1,18 @@
+.hero img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #2e8364;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
 .menu-escritorio {
     list-style-type: none;
     background-color: #00A86B;
@@ -26,28 +41,11 @@
     color: #17acf0;
 }
 
-.texto {
-    font-size: 27px;
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-}
-
-.multimedia {
-    text-align: center; 
-}
-
-
 h2 {
     text-align: center;
     margin-top: 30px;
     font-size: 40px;
     letter-spacing: 2px;
-}
-
-.multimedia {
-    text-align: center;
-    margin: 30px;
 }
 
 .container {
@@ -66,7 +64,6 @@ h2 {
     max-width: 850px;
     margin: 20px auto; 
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column; 
 }
@@ -78,32 +75,6 @@ h2 {
 
 .card p {
     margin: 5px 0;
-}
-
-.volver {
-    display: block;
-    text-align: center;
-    margin: 40px;
-}
-
-.volver a {
-    background: #17acf0;
-    padding: 12px 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.volver a:hover {
-    background: white;
-}
-
-.fila-foto {
-    display: flex; 
-    align-items: center; 
-    gap: 30px; 
 }
 
 .fila-foto {
