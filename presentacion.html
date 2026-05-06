@@ -35,5 +35,14 @@ Además, valoro el respeto, la buena comunicación y la disciplina, ya que consi
 <audio controls>
     <source src="Audio/dlmd.mp3" type="audio/mp3">
 </audio>
+
+<script>
+    const menuBtn = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    menuBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
