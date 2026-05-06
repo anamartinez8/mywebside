@@ -274,3 +274,33 @@ h2 {
     font-weight: bold;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+   
+    .fila-pasatiempos {
+        flex-direction: column;
+        text-align: left; 
+    }
+
+    .lista-pasatiempos {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .lista-pasatiempos ul {
+        padding-left: 20px;
+        font-size: 18px; 
+    }
+
+    .video-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+
+    .video-container video {
+        width: 100%;     
+        max-width: 300px; 
+        height: auto;
+    }
+}
